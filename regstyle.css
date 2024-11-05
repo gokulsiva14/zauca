@@ -1,0 +1,127 @@
+.top-bar{
+    font-family: "Open Sans";
+    font-size: 14px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    color: #777;
+    line-height: 20px;
+    text-decoration: none;
+    height:70px;
+}
+.top-bar a{
+    color: #777;
+}
+
+.top-bar ul{
+    list-style-type:none;
+
+}
+.top-nav{
+    gap:20px !important;
+}
+.top-nav button{
+    padding-top: 6px;
+    padding-right: 15px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    background-color: #0e5077;
+    color: #fff;
+    border-radius: 3px;  
+
+}
+#languagePopover {
+    display: none;
+    position: absolute;
+    width: 450px;
+    height: 260px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+#languagePopover ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#languagePopover ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+#languagePopover ul li a:hover {
+    text-decoration: underline;
+}
+
+a#languageToggle {
+    color: #777;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.reg_border{
+    padding-right: 8px;
+    border-right: 1px solid #777;
+}
+#nav li{
+     padding: 0 3px;
+     font-size: 1.03rem;
+     color: white;
+}
+
+.login{
+    padding-left: 130px !important;
+}
+.exituser p{
+    font-size: 1.1em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    color: #555;
+}
+.navbar1{
+    background-color: #0e5077;
+    height: 50px;
+    font-family: "Raleway";
+    font-size: 15px;
+}
+
+#nav .container-fluid{
+    padding: 0 10rem !important;
+}
+.form i{
+    position: absolute;
+    top: 10%;
+}
+
+.login button[type=submit]{
+    color: white;
+    background-color: #0e5077;
+    border-color: #0e5077;
+    outline:#0e5077;
+    padding: 5px 15px;
+}
+.login button{
+    color:#0e5077;
+    background-color: white;
+    border-color: #0e5077;
+    padding: 5px 15px;
+}
+
+
+
+@media only screen and (max-width:990px)
+{
+    #nav .container-fluid{
+        padding: 0 20px  !important;
+    }
+}
+
+

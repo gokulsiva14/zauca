@@ -1,0 +1,814 @@
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="./regstyle.css">
+
+    <!-- <link href="/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+
+</head>
+
+
+<body>
+    <div class=" d-flex justify-content-around align-items-center top-bar">
+
+
+        <a href="">
+            <img src="https://clients.zauca.com/assets/img/logo.jpg" width="160px" height="50px">
+        </a>
+        <div class="">
+            <ul class="top-nav d-flex justify-content-center align-items-center">
+                <li>
+                    <a id="languageToggle">English</a>
+                    <div class="chooselanguage" id="languagePopover">
+                        <ul>
+                            <li><a href="/submitticket.php?step=2&amp;deptid=1&amp;language=english">English</a></li>
+                            <li><a href="/submitticket.php?step=2&amp;deptid=1&amp;language=arabic">العربية</a></li>
+                            <li><a href="/submitticket.php?step=2&amp;deptid=1&amp;language=azerbaijani">Azerbaijani</a>
+                            </li>
+                            <li><a href="/submitticket.php?step=2&amp;deptid=1&amp;language=catalan">Català</a></li>
+                            <li><a href="/submitticket.php?step=2&amp;deptid=1&amp;language=chinese">中文</a></li>
+                            <li><a href="/submitticket.php?step=2&amp;deptid=1&amp;language=croatian">Hrvatski</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+
+
+
+
+                <li>
+                    <a href="">Login</a>
+                </li>
+                <li class="reg_border">
+                    <a href="./register.html">Register</a>
+                </li>
+
+                <li>
+                    <button type="button">View cart</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark " aria-label="Fifth navbar example"
+        style="background-color: #0e5077;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05"
+                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarsExample05">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown"
+                            aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">Store</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                            <li><a class="dropdown-item" href="#">E-commerce Website</a></li>
+                            <li><a class="dropdown-item" href="#">Development website</a></li>
+                            <li><a class="dropdown-item" href="#">Form development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Announcements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Knowledge base</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Network Status</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Account</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                            <li><a class="dropdown-item" href="./clientarea.html">Login</a></li>
+                            <li><a class="dropdown-item" href="./register.html">Register</a></li>
+                            <li><a class="dropdown-item" href="">Forget Password</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Expand at lg</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav> -->
+
+
+
+
+    <div class=" row d-flex flex-row  justify-content-center align-items-center mt-5" style="width: 100%;">
+
+        <div class=" login col-9">
+            <div class="loghead">
+                <p style="font-size: 36px;color: #0e5077;">Register <span style="font-size: 23.4px;color: #777;">Create
+                        a Account with us</span></p>
+            </div>
+
+            <hr>
+            <form id="personalForm" action="./index.html" target="_blank">
+                <div class="tab">
+
+                    <h4 style="color: #0e5077;">Personal Details</h4>
+                    <br>
+
+                    <div class="row form-group mb-0">
+                        <!-- First Name -->
+                        <div class="fname col-md-6" style="position: relative;">
+                            <i class="fas fa-user" style="color: #777; position: absolute; top:43px;left: 18px; "></i>
+                            <label for="firstName" class="form-label">First Name</label>
+
+                            <input type="text" class="form-control" id="firstname" placeholder=" &nbsp;Enter first name"
+                                style="padding-left: 25px;">
+                            <i id="validCheck1" class="fa-regular fa-circle-check fa-xl"
+                                style="color: #328d11; position: absolute; right: 16px; top: 48px;  display: none;"></i>
+                            <i id="invalidCheck1" class="fa-regular fa-circle-xmark fa-xl"
+                                style="color: #b92727; position: absolute; right: 16px; top: 48px;  display: none;"></i>
+                            <p id="warning1" style="color: red;font-size: 10px;padding-top: 10px;"></p>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="lname col-md-6 mb-3" style="position: relative;">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <i class="fas fa-user" style="color: #777; position: absolute; top:43px;left: 18px; "></i>
+                            <input type="text" class="form-control" id="lastname" placeholder=" &nbsp;Enter last name"
+                                style="padding-left: 25px;">
+                            <i id="validCheck2" class="fa-regular fa-circle-check fa-xl"
+                                style="color: #328d11; position: absolute;right: 16px; top: 48px;  display: none;"></i>
+                            <i id="invalidCheck2" class="fa-regular fa-circle-xmark fa-xl"
+                                style="color: #b92727; position: absolute; right: 16px; top: 48px;  display: none;"></i>
+                            <p id="warning2" style="color: red;font-size: 10px;padding-top: 10px;"></p>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <!-- Email -->
+                        <div class="col-md-6 mb-1" style="position: relative;">
+                            <label for="email" class="form-label">Email address</label>
+                            <i class="fas fa-envelope"
+                                style="color: #777; position: absolute; top:48px;left: 18px; "></i>
+
+                            <input type="email" class="form-control" id="email" placeholder=" &nbsp; Enter email"
+                                style="padding-left: 25px;">
+                            <i id="validCheck3" class="fa-regular fa-circle-check fa-xl"
+                                style="color: #328d11; position: absolute;right: 16px; top: 48px;  display: none;"></i>
+                            <i id="invalidCheck3" class="fa-regular fa-circle-xmark fa-xl"
+                                style="color: #328d11; position: absolute;right: 16px; top: 48px;  display: none;"></i>
+                            <p id="warning3" style="color: red;font-size: 10px;padding-top: 10px;"></p>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="row form-group">
+
+                        <div class="col-md-3 mb-3">
+                            <label for="dob" class="form-label">Date of Birth:</label>
+                            <input type="date" class="form-control" id="dob" style="padding-left: 25px;"
+                                onchange="calcAge();">
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                            <label for="age" class="form-label">Age:</label>
+                            <i class="fa-solid fa-circle-info " id="infoPopover" tabindex="0" data-bs-toggle="popover"
+                                data-bs-trigger="hover" data-bs-content="Age should be automatically calculated"
+                                style="cursor: pointer;" style="color: #777; padding-left: 4px;"></i>
+
+
+                            <input type="text" class="form-control" id="age" style="padding-left: 25px;" disabled>
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+
+
+                <div class="tab">
+
+                    <h4 style="color: #0e5077;">Contact Details:</h4>
+
+
+                    <div class="row form-group" style="position: relative;">
+                        <div class="col-md-12 mb-3">
+                            <label for="company" class="form-label">Company Name</label>
+                            <i class="fas fa-building"
+                                style="color: #777; position: absolute; top:43px;left: 18px; "></i>
+                            <input type="text" class="form-control" id="company" placeholder=" &nbsp;Enter company name"
+                                style="padding-left: 25px;">
+                            <p id="warning4" style="color: red;font-size: 10px;padding-top: 10px;"></p>
+                        </div>
+
+                        <div class="col-md-12 mb-3" style="position: relative;">
+                            <label for="street" class="form-label">Street Address</label>
+                            <i class="far fa-building"
+                                style="color: #777; position: absolute; top:43px;left: 18px;"></i>
+                            <input type="text" class="form-control" id="street" placeholder="Enter address"
+                                style="padding-left: 25px;">
+                            <p id="warning5" style="color: red;font-size: 10px;padding-top: 10px;"></p>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-md-1 mb-1">
+                            <label for="code" class="form-label">Code:</label>
+                            <input type="text" class="form-control code" id="code">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="col-md-4 mb-1" style="position: relative;">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <i class="fa-solid fa-phone"
+                                style="color: #777; position: absolute; top:43px;left: 18px;"></i>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" maxlength="10"
+                                style="padding-left: 25px;">
+                                <p id="warningp" style="color: red;font-size: 10px;padding-top: 10px;"></p>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="row">
+
+
+                        <div class="col-md-4 mb-3">
+                            <label for="country" class="form-label">Country</label>
+                            <select type="text" class="form-select country" id="country" placeholder="Enter country "
+                                onchange="loadStates(),loadCodes()">
+                                <option value="null" selected>Select country</option>
+                            </select>
+                            <p id="warning6" style="color: red;font-size: 10px;padding-top: 10px;"></p>
+
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label for="state" class="form-label">State</label>
+                            <select type="text" class="form-select state" id="state" placeholder="Enter state "
+                                onchange="loadCities()">
+                                <option value="null" selected>Select state</option>
+                            </select>
+                            <p id="warning7" style="color: red;font-size: 10px;padding-top: 10px;"></p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="city" class="form-label">District</label>
+                            <select type="text" class="form-select city" id="city" placeholder="Enter city">
+                                <option value="null" selected>Select district</option>
+                            </select>
+                            <p id="warning8" style="color: red;font-size: 10px;padding-top: 10px;"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <div class="tab">
+
+                    <h4 style="color: #0e5077;">Login Credentials</h4>
+                    <div class="row">
+                        <div class="col-6  mb-5" style="position: relative;">
+
+                            <label for="Password">Password</label>
+                            <i class="fas fa-lock" style="color: #777; position: absolute; top:35px;left: 18px;"></i>
+                            <input type="password" class="form-control" id="Password" placeholder="Password"
+                                style="padding-left: 25px;">
+                            <p id="warning9" style="color: red;font-size: 10px;padding-top: 10px;"></p>
+                            <div id="strengthMessage" class="text-muted"></div>
+
+                        </div>
+                        <div class="col-6 mb-5" style="position: relative;">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <i class="fas fa-lock" style="color: #777; position: absolute; top:35px;left: 18px;"></i>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Password"
+                                style="padding-left: 25px;">
+                            <p id="warning10" style="color: red;font-size: 10px;padding-top: 10px;"></p>
+                            <div id="matchMessage" class="text-muted"></div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row">
+                        <div class="offset-4 col-2">
+                            <button id="Submit" type="submit">Submit</button>
+                        </div>
+                        <div class="col-2">
+                            <button type="button">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+
+        var popoverTrigger = document.getElementById('infoPopover');
+        var popover = new bootstrap.Popover(popoverTrigger);
+         
+        const email=document.getElementById("email");
+        const fname=document.getElementById("firstname");
+        const passkey=document.getElementById("Password");
+
+
+        function validateSelect(field, warning, message) {
+            var fieldValue = document.getElementById(field);
+            var warningMessage = document.getElementById(warning);
+
+            if (fieldValue.value == "null") {
+                warningMessage.innerHTML = message;
+                return false;
+            }
+            else {
+                warningMessage.innerHTML = "";
+                return true;
+            }
+        }
+
+
+        function validate(field, warning, message) {
+            var fieldValue = document.getElementById(field).value;
+            var warningMessage = document.getElementById(warning);
+
+            if (fieldValue == "") {
+                warningMessage.innerHTML = message;
+                return false;
+            }
+            else {
+                warningMessage.innerHTML = "";
+                return true;
+            }
+
+        }
+
+
+
+        function validateField(fieldId, warningId, validIconId, invalidIconId, pattern, emptyMessage, invalidMessage) {
+            var fieldValue = document.getElementById(fieldId).value;
+            var warningMessage = document.getElementById(warningId);
+            const validIcon = document.getElementById(validIconId);
+            const invalidIcon = document.getElementById(invalidIconId);
+
+            if (fieldValue.trim() === "") {
+                invalidIcon.style.display = "inline";
+                validIcon.style.display = "none";
+                warningMessage.innerHTML = emptyMessage;
+                warningMessage.style.color = "red";
+                warningMessage.style.display = "block";
+                return false;
+            }
+
+
+            const isValid = pattern.test(fieldValue);
+            if (!isValid) {
+                invalidIcon.style.display = "inline";
+                validIcon.style.display = "none";
+                warningMessage.innerHTML = invalidMessage;
+                warningMessage.style.color = "red";
+                warningMessage.style.display = "block";
+                return false;
+            } else {
+                validIcon.style.display = 'inline';
+                invalidIcon.style.display = 'none';
+                warningMessage.innerHTML = "";
+                warningMessage.style.display = "none";
+                return true;
+            }
+        }
+
+
+        document.getElementById("firstname").addEventListener("blur", function () {
+            validateField(
+                "firstname", "warning1", "validCheck1", "invalidCheck1", /^[a-zA-Z]{3,}$/,
+                "First name cannot be empty", "Invalid first name"
+            );
+        });
+
+        document.getElementById("lastname").addEventListener("blur", function () {
+            validateField(
+                "lastname", "warning2", "validCheck2", "invalidCheck2", /^[a-zA-Z]{1,}$/,
+                "Last name cannot be empty", "Invalid last name"
+            );
+        });
+
+        document.getElementById("email").addEventListener("blur", function () {
+            validateField(
+                "email", "warning3", "validCheck3", "invalidCheck3", /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                "Email cannot be empty", "Invalid email format"
+            );
+        });
+
+        document.getElementById("company").addEventListener("input", function () {
+            validate("company", "warning4", "ivalid")
+        });
+
+        document.getElementById("street").addEventListener("input", function () {
+            validate("street", "warning5", "ivalid")
+        });
+
+        document.getElementById("country").addEventListener("input", function () {
+            validateSelect("country", "warning6", "ivalid")
+        });
+        document.getElementById("state").addEventListener("input", function () {
+            validate("state", "warning7", "ivalid")
+        });
+        document.getElementById("city").addEventListener("input", function () {
+            validate("city", "warning8", "ivalid")
+        });
+        document.getElementById("Password").addEventListener("input", function () {
+            validate("Password", "warning9", "")
+        });
+        document.getElementById("confirmPassword").addEventListener("input", function () {
+            validate("confirmPassword", "warning10", "")
+        });
+
+        
+
+        document.getElementById("phone").addEventListener("input",function(){
+            var ph=this.value;
+            var warningMessage=document.getElementById("warningp");
+            const pattern=/^[0-9]*$/;
+
+            const isvalidPh=pattern.test(ph);
+
+            if(isvalidPh){
+                warningMessage.innerHTML="";
+            }
+            else{
+                warningMessage.style.color = "red";
+                warningMessage.innerHTML="phone number must be a number";
+            }  
+        })
+
+
+        document.getElementById("Submit").addEventListener("click", function (event) {
+            console.log("sdaffffffff");
+
+
+            const isFirstNameValid = validateField(
+                "firstname", "warning1", "validCheck1", "invalidCheck1", /^[a-zA-Z]{3,}$/,
+                "First name cannot be empty", "Invalid first name"
+            );
+
+            const isLastNameValid = validateField(
+                "lastname", "warning2", "validCheck2", "invalidCheck2", /^[a-zA-Z]{3,}$/,
+                "Last name cannot be empty", "Invalid last name"
+            );
+
+            const isEmailValid = validateField(
+                "email", "warning3", "validCheck3", "invalidCheck3", /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                "Email cannot be empty", "Invalid email format"
+            );
+
+            const isCompany = validate("company", "warning4", "Company cannot be empty");
+            const isStreet = validate("street", "warning5", "Street cannot be empty");
+
+            const isCountry = validateSelect("country", "warning6", "Country cannot be empty");
+            const isState = validateSelect("state", "warning7", "State cannot be empty");
+            const isCity = validateSelect("city", "warning8", "City cannot be Empty");
+
+
+            const isPassword = validate("Password", "warning9", "Password cannot be Empty");
+            const isStrengthPassword = validate("confirmPassword", "warning10", "Password cannot be Empty");
+
+            if (isFirstNameValid && isLastNameValid && isEmailValid && isCompany && isStreet && isCountry && isState && isCity && isPassword && isStrengthPassword) {
+                alert("Form Submitted Successfully!");
+                const User_Key = email.value;
+                const User_Value = {
+                    first_name: fname.value,
+                    password_key:passkey.value,
+                   
+                }
+                localStorage.setItem(User_Key, JSON.stringify(User_Value));
+                console.log( localStorage.getItem(User_Key));
+
+            } else {
+                alert("Please correct the highlighted errors before submitting.");
+                event.preventDefault();
+            }
+        });
+
+
+        document.getElementById('Password').addEventListener('input', function () {
+            const password = this.value;
+            const strengthMessage = document.getElementById('strengthMessage');
+            const strength = checkPasswordStrength(password);
+            strengthMessage.textContent = strength.message;
+            strengthMessage.className = strength.className;
+        });
+
+
+        function checkPasswordStrength(password) {
+            let strength = {
+                message: "Weak",
+                className: "text-danger"
+            };
+
+            const hasUpperCase = /[A-Z]/.test(password);
+            const hasLowerCase = /[a-z]/.test(password);
+            const hasNumbers = /\d/.test(password);
+            const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+            const isLongEnough = password.length >= 8;
+
+            let score = 0;
+            if (hasUpperCase) score++;
+            if (hasLowerCase) score++;
+            if (hasNumbers) score++;
+            if (hasSpecialChar) score++;
+            if (isLongEnough) score++;
+
+            switch (score) {
+                case 5:
+                    strength.message = "Very Strong";
+                    strength.className = "text-success";
+                    break;
+                case 4:
+                    strength.message = "Strong";
+                    strength.className = "text-success";
+                    break;
+                case 3:
+                    strength.message = "Moderate";
+                    strength.className = "text-warning";
+                    break;
+                case 2:
+                    strength.message = "Weak";
+                    strength.className = "text-danger";
+                    break;
+                default:
+                    strength.message = "Very Weak";
+                    strength.className = "text-danger";
+            }
+
+            return strength;
+        }
+
+
+        document.getElementById('confirmPassword').addEventListener('input', function () {
+            const password = document.getElementById('Password').value;
+            const confirmPassword = this.value;
+            const matchMessage = document.getElementById('matchMessage');
+
+            if (password === confirmPassword) {
+                matchMessage.textContent = "Passwords match";
+                matchMessage.className = "text-success";
+            } else {
+                matchMessage.textContent = "Passwords do not match";
+                matchMessage.className = "text-danger";
+            }
+
+        });
+
+        function calcAge() {
+            const date = document.getElementById('dob').value;
+            if (date) {
+                const birthDate = new Date(date);
+                const today = new Date();
+
+                let age = today.getFullYear() - birthDate.getFullYear();
+                const monthDifference = today.getMonth() - birthDate.getMonth();
+                const dayDifference = today.getDate() - birthDate.getDate();
+
+                if (monthDifference < 0 || dayDifference < 0) {
+                    age--;
+                }
+
+                document.getElementById('age').value = age;
+                console.log(age);
+
+            }
+        }
+
+
+        var config = {
+            cUrl: 'https://api.countrystatecity.in/v1/countries',
+            ckey: 'MjBiTUQ4S2w0ck43bm1xeHJFRnNSWjNZU3cwZ1dnZkVBclBtaXptaQ==',
+        }
+
+        var countrySelect = document.querySelector('.country'),
+            stateSelect = document.querySelector('.state'),
+            citySelect = document.querySelector('.city'),
+            codeSelect = document.querySelector('.code')
+
+
+
+        function loadCountries() {
+
+            let apiEndPoint = config.cUrl
+
+            fetch(apiEndPoint, { headers: { "X-CSCAPI-KEY": config.ckey } })
+                .then(Response => Response.json())
+                .then(data => {
+                    console.log(data)
+
+
+                    data.forEach(country => {
+                        const option = document.createElement('option')
+                        option.value = country.iso2
+                        option.textContent = country.name
+                        countrySelect.appendChild(option)
+                    })
+                })
+                .catch(error => console.error('Error loading countries:', error))
+
+            stateSelect.disabled = true
+            codeSelect.disabled = true
+            citySelect.disabled = true
+            stateSelect.style.pointerEvents = 'none'
+            citySelect.style.pointerEvents = 'none'
+            codeSelect.style.pointerEvents = 'none'
+        }
+
+        function loadCodes() {
+
+            codeSelect.disabled = false
+            codeSelect.style.pointerEvents = 'auto'
+
+            const selectedCountryCode = countrySelect.value;
+
+
+
+            fetch(`${config.cUrl}/${selectedCountryCode}`, { headers: { "X-CSCAPI-KEY": config.ckey } })
+                .then(response => response.json())
+                .then(data => {
+                    codeSelect.value = `+${data.phonecode}`;
+                })
+                .catch(error => console.error('Error loading countries:', error))
+        }
+
+
+        function loadStates() {
+            stateSelect.disabled = false;
+            citySelect.disabled = true;
+            stateSelect.style.pointerEvents = 'auto';
+            citySelect.style.pointerEvents = 'none';
+
+            const selectedCountryCode = countrySelect.value;
+
+            stateSelect.innerHTML = '<option value="">Select State</option>'
+            citySelect.innerHTML = '<option value="">Select City</option>'
+
+            fetch(`${config.cUrl}/${selectedCountryCode}/states`, { headers: { "X-CSCAPI-KEY": config.ckey } })
+                .then(response => response.json())
+                .then(data => {
+
+
+                    data.forEach(state => {
+                        const option = document.createElement('option')
+                        option.value = state.iso2
+                        option.textContent = state.name
+                        stateSelect.appendChild(option)
+                    })
+                })
+                .catch(error => console.error('Error loading countries:', error))
+        }
+
+
+        function loadCities() {
+            citySelect.disabled = false
+            citySelect.style.pointerEvents = 'auto'
+
+            const selectedCountryCode = countrySelect.value
+            const selectedStateCode = stateSelect.value
+
+
+            citySelect.innerHTML = '<option value="">Select City</option>'
+
+            fetch(`${config.cUrl}/${selectedCountryCode}/states/${selectedStateCode}/cities`, { headers: { "X-CSCAPI-KEY": config.ckey } })
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(city => {
+                        const option = document.createElement('option')
+                        option.value = city.iso2
+                        option.textContent = city.name
+                        citySelect.appendChild(option)
+                    })
+                })
+        }
+
+        window.onload = loadCountries
+
+
+
+
+        document.getElementById("personalForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+
+            const firstName = document.getElementById("firstname");
+            const lastName = document.getElementById("lastname");
+            const email = document.getElementById("email");
+
+
+            document.getElementById("warning1").style.display = 'none';
+            document.getElementById("warning2").style.display = 'none';
+            document.getElementById("warning3").style.display = 'none';
+
+
+            let isValid = true;
+
+            if (firstName.value.trim() === "") {
+                document.getElementById("warning1").style.display = 'block';
+                document.getElementById("warning1").innerHTML = "Cannot be empty";
+                isValid = false;
+            }
+            if (lastName.value.trim() === "") {
+                document.getElementById("warning2").style.display = 'block';
+                document.getElementById("warning2").innerHTML = "Cannot be empty";
+                isValid = false;
+            }
+            if (email.value.trim() === "") {
+                document.getElementById("warning3").style.display = 'block';
+                document.getElementById("warning3").innerHTML = "Cannot be empty";
+                isValid = false;
+            }
+
+
+            if (isValid) {
+                alert("Form Submitted Successfully!");
+
+            }
+        });
+
+
+    </script>
+
+
+</body>
+
+
+</html>

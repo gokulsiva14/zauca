@@ -1,0 +1,134 @@
+body{
+    width: 100%;
+}
+
+.top-bar{
+    font-family: "Open Sans";
+    font-size: 14px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    color: #777;
+    line-height: 20px;
+    text-decoration: none;
+    height:70px;
+}
+.top-bar a{
+    color: #777;
+}
+
+.top-bar ul{
+    list-style-type:none;
+
+}
+.top-nav{
+    gap:20px !important;
+}
+.top-nav button{
+    padding-top: 6px;
+    padding-right: 15px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    background-color: #0e5077;
+    color: #fff;
+    border-radius: 3px;  
+
+}
+#languagePopover {
+    display: none;
+    position: absolute;
+    width: 450px;
+    height: 260px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+#languagePopover ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#languagePopover ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+#languagePopover ul li a:hover {
+    text-decoration: underline;
+}
+
+a#languageToggle {
+    color: #777;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.reg_border{
+    padding-right: 8px;
+    border-right: 1px solid #777;
+}
+.top-list{
+    height: 38px;
+    background-color: #0e5077;
+    font-family: "Raleway";
+    font-size: 15px;
+}
+.top-list a{
+    color: white;
+    text-decoration: none;
+}
+.top-list a:hover{
+    text-decoration: none;
+    color: white;
+}
+.top-list ul{
+    list-style-type:none;
+}
+.top-list .dropdown-item{
+    color: black;
+}
+.top-list .dropdown-item:hover{
+    color: #777;
+}
+.left-top-list{
+    gap: 20px;
+}
+.login{
+   
+    margin-left: 400px;
+
+}
+.loghead  p{
+    font-family: "Raleway";
+    margin-bottom: 2px;
+    border-bottom: 1px solid black;
+    
+}
+.form-group{
+    font-family: "Open Sans";
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.form-button button[type=submit]{
+    color: white !important;
+    background-color: #0e5077 !important;
+    outline:#0e5077;
+    border: #0e5077;
+}
+.form-group{
+    position: relative;
+}
+.fname{
+    position: relative;
+}
+.lname{
+    position: relative;
+}
